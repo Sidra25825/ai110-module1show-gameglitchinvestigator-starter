@@ -19,6 +19,9 @@ When I first ran the game, it looked normal, but it didn't work correctly. Press
 | Guessed 99 (secret was 90) | "Go LOWER" | "Go HIGHER" | No error |
 | Played on Normal (8 attempts allowed) | 8 attempts | Game ended after 7 attempts | No error |
 | Clicked "New Game" after losing | A new game starts | Stuck on "Game over. Start a new game to try again." | No error |
+| Guessed 100 on my 2nd attempt (after fixing the hints) | "Go LOWER" | "Go HIGHER" (on every even attempt the secret was turned into text, so the comparison broke) | No error |
+| Made my first guess on Normal | "Attempts left" goes from 8 to 7 | Still showed 8, so the counter was always one behind and I thought I had one more guess left | No error |
+| Lost the game, then clicked Submit again | Still see what the secret number was | The "The secret was..." message disappeared and only "Game over" was shown | No error |
 
 
 ---
