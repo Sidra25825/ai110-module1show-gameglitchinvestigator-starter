@@ -8,15 +8,18 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
-**Bug Reproduction Log**
 
-Document at least 3 bugs you found. Add rows as needed.
+When I first ran the game, it looked normal, but it didn't work correctly. Pressing Enter did nothing, so I had to click "Submit Guess". The hints were backwards: when I guessed 1 (the lowest number) it told me "Go LOWER", and when I guessed 99 and the secret was 90 it told me "Go HIGHER". I also ran out of attempts one guess early, and the "New Game" button didn't start a new game after I lost.
+
+**Bug Reproduction Log**
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Guessed 1 | "Go HIGHER" (1 is the lowest number) | "Go LOWER" | No error |
+| Guessed 99 (secret was 90) | "Go LOWER" | "Go HIGHER" | No error |
+| Played on Normal (8 attempts allowed) | 8 attempts | Game ended after 7 attempts | No error |
+| Clicked "New Game" after losing | A new game starts | Stuck on "Game over. Start a new game to try again." | No error |
+
 
 ---
 
